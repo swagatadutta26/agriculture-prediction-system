@@ -74,6 +74,16 @@ agriculture-prediction-system/
 **Project Type:** Third Year Mini Project
 **Department:** Computer Science & Business Systems (CSBS)
 
+## 📸 Project Screenshots
+
+### Best Model Selection
+
+![Best Model](screenshots/best_model.png)
+
+### Example Prediction
+
+![Prediction Output](screenshots/prediction_output.png)
+
 ## 🚀 Future Improvements
 
 * Web Application Deployment
