@@ -1,97 +1,62 @@
 # 🌾 Agriculture Prediction System
 
-## 📌 Overview
+A Machine Learning project that recommends the most suitable crop for cultivation based on soil nutrient analysis. Trained and compared 5 classification algorithms — selecting Random Forest as the best-performing model with **81.14% accuracy**.
 
-The Agriculture Prediction System is a Machine Learning project developed during my 3rd year of B.Tech (CSBS). The project aims to recommend suitable crops based on soil nutrient values and soil characteristics.
+🔗 **[View Notebook](Agriculture_Prediction_System.ipynb)**
 
-By analyzing soil parameters such as Nitrogen (N), Phosphorus (P), Potassium (K), and pH level, the system predicts the most suitable crop for cultivation.
+---
 
-## 🎯 Project Objectives
+## 📌 Problem Statement
 
-* Analyze soil nutrient data
-* Perform Exploratory Data Analysis (EDA)
-* Train and compare multiple Machine Learning models
-* Predict suitable crops based on soil properties
+Farmers often lack data-driven tools to determine which crop suits their soil conditions. This system takes soil nutrient readings as input and predicts the optimal crop — reducing guesswork and improving yield decisions.
 
-## 📊 Dataset Features
+## 📊 Dataset
 
-The dataset contains the following features:
+| Feature | Description |
+|---------|-------------|
+| N | Nitrogen content in soil |
+| P | Phosphorus content in soil |
+| K | Potassium content in soil |
+| pH | Soil pH level |
+| **crop** | Target variable — crop type to recommend |
 
-* Nitrogen (N)
-* Phosphorus (P)
-* Potassium (K)
-* pH Value
+Source: `soil_measures.csv` (included in repo)
 
-Target Variable:
+## 🤖 Model Comparison Results
 
-* Crop Type
+| Model | Accuracy |
+|-------|----------|
+| Logistic Regression | 66.82% |
+| Decision Tree | 38.18% |
+| Naive Bayes | 77.50% |
+| **Random Forest** | **81.14%** ✅ |
+| SVM | 60.45% |
 
-## 🛠️ Technologies Used
+Random Forest selected as the final model based on highest test set accuracy.
 
-* Python
-* Google Colab
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-Learn
+## 📸 Results
 
-## 🤖 Machine Learning Models Implemented
+### Model Accuracy Comparison
+![Accuracy Comparison](screenshots/accuracy.png)
 
-* Logistic Regression
-* Decision Tree Classifier
-* Random Forest Classifier
-* Support Vector Machine (SVM)
-* Gaussian Naive Bayes
+### Best Model Selection
+![Best Model](screenshots/best_model.png)
+
+### Example Prediction Output
+![Prediction Output](screenshots/prediction_output.png)
+
+## 🛠️ Tech Stack
+
+- Python, scikit-learn, pandas, NumPy, Matplotlib, Seaborn
+- Google Colab
 
 ## 📈 Project Workflow
 
-1. Data Collection
-2. Data Preprocessing
-3. Exploratory Data Analysis
-4. Correlation Analysis
-5. Model Training
-6. Model Evaluation
-7. Crop Prediction
-
-## 📋 Evaluation Metrics
-
-The models were evaluated using:
-
-* Accuracy Score
-* F1 Score
-* Classification Report
+1. Data Collection & Loading
+2. Exploratory Data Analysis (EDA)
+3. Feature Analysis & Correlation
+4. Model Training — 5 algorithms compared
+5. Model Evaluation (Accuracy, F1 Score, Classification Report)
+6. Final Model Selection & Crop Prediction
 
 ## 📂 Repository Structure
-
-agriculture-prediction-system/
-├── Agriculture_Prediction_System.ipynb
-├── soil_measures.csv
-└── README.md
-
-## 🎓 Academic Information
-
-**Project Type:** Third Year Mini Project
-**Department:** Computer Science & Business Systems (CSBS)
-
-## 📸 Project Screenshots
-
-### Best Model Selection
-
-![Best Model](screenshots/best_model.png)
-
-### Example Prediction
-
-![Prediction Output](screenshots/prediction_output.png)
-
-## 🚀 Future Improvements
-
-* Web Application Deployment
-* Real-Time Crop Recommendation
-* Weather Data Integration
-* Mobile Application Support
-
-## 📧 Contact
-
-Swagata Dutta
-Kolkata, India
