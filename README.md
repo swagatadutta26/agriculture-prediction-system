@@ -37,7 +37,7 @@ Random Forest selected as the final model based on highest test set accuracy.
 ## 📸 Results
 
 ### Model Accuracy Comparison
-![Accuracy Comparison](screenshots/accuracy.png)
+![Accuracy Comparison](screenshots/accuracy_table.png)
 
 ### Best Model Selection
 ![Best Model](screenshots/best_model.png)
